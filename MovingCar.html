@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Moving Car </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/jquery.js" ></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<style type="text/css">
+	img {
+  position: absolute;
+  background-color: white;
+  height: auto;
+  width:300px;
+  right:300px;
+  transform: translateX(100%);
+}
+@keyframes moveImage {
+    0% {
+      transform:  translateX(100%);
+    }
+}
+.animation{
+	animation: moveImage 3s linear infinite; 
+	transform: translateX(-90vw);
+	transition: all 4s linear 0s;
+}
+	
+</style>
+</head>
+<body>
+	<div>
+		<button class="btn form-btn" id="start">Start</button>
+		<button class="btn form-btn" id="stop">Stop</button>
+	</div>
+<div class="row" style="height: 300px;background-color:black;margin-top:200px">
+<div class="col-sm-12 col-md-12 col-lg-12 noPadding" style="background-color: white;height: 220px;">
+	<div id="moveDiv" style="height:200px;float: right;position: relative;top:125px">
+		<img id="carImg" src="img/car-new.png">
+	</div>
+</div>
+</div>
+
+</body>
+</html>
